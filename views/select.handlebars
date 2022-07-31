@@ -1,0 +1,42 @@
+<Meta http-equiv="refresh" content="45" />
+
+<div class="menu">
+    
+</div>
+<div class="container-select">
+    <div class="map">
+        <img src="/img/Base.PNG" alt="" class="img-map">
+    </div>
+       
+        <table class="table-select">
+            <caption class="header-insert">Pts Abertas</caption>
+            <tr >
+                <th></th>
+                <th></th>
+                <th >Numero PT</th>
+                <th>Emitente</th>
+                <th>Requisitante</th>
+                <th>Participantes</th>
+                <th>Localização</th>
+                <th >Descrição</th>
+                <th>Data/Hora</th>
+
+            </tr>
+
+            
+            {{#data}}
+            <tr>
+                <td><a href="close"><img class="option-ico-edit" src="/img/edit.png"></a></td>
+                <td><a href="close"><img class="option-ico-del" src="/img/cancel.png"></a></td>
+                <td>{{cod}}</td>
+                <td>{{emitente}}</td>
+                <td>{{requisitante}}</td>
+                <td>{{participantes}}</td>
+                <td>{{localizacao}}</td>
+                <td>{{descricao}}</td>
+                <td>{{data_hora}}</td>
+            </tr>
+            {{/data}}
+        </table>
+
+    </div>

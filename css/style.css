@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header {
+    height: 30%;
+    background-color: #044317;
+    text-align: center;
+    color: #ecf0f1;
+    display: flex;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+
+}
+.container-select{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+
+    
+
+}
+
+.img-map{
+ height: 100vh;
+
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 22px;
+
+}
+
+h3.section {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+
+
+
+}
+
+body,
+div,
+form,
+input,
+p,
+select {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+form.insert {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    padding: 50px;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    justify-content: safe;
+}
+
+
+form.login {
+    
+}
+
+.button {
+    background-color: #044317;
+    /* Green */
+    border: #044317;
+    border-radius: 30px;
+    width: 60%;
+    color: white;
+    margin-left: 20%;
+    padding: 8px 32px;
+    text-align: center;
+    font-size: 16px;
+
+
+
+
+
+}
+
+button:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+br {
+    width: 2px;
+}
+
+.logo {
+    width: 15vh;
+    display: flex;
+    flex-direction: column;
+    margin-left:18%;
+    padding: 1vh;
+
+
+}
+.option-ico-del{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+}
+.option-ico-edit{
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+}
+
+.table-select{
+    border-collapse: collapse;
+    width: 100%;
+    
+    height: 40vh;
+ 
+    font-size:20px;
+
+    
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.header-insert{
+    height: 10%;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    justify-content: space-around;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+
+#slider{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    background: red;
+    width: 150px;
+    height: 50px;
+    animation: anima 3s linear infinite;
+ }
+ 
+ #slider::after{
+    content:"";
+    position:absolute;
+    left:vw;
+    
+    width: 150px;
+    height: 50px;
+ }
+ 
+ @keyframes anima{
+    from {right: 0}
+    to {right: 100%}
+ }
+
+
+/*Side Menu*/
+

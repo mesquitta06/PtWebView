@@ -1,0 +1,129 @@
+<div id="current_date"  name="current-date">
+    </p>
+    <script>
+        document.getElementById("current_date").innerHTML = Date();
+    </script>
+   
+
+    <form class="form-horizontal" action="controllerForm" method="post">
+        <div class="panel-body">
+            <div class="form-group">
+                <h3 class="section">Cadastrar</h3>
+
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="numeroPt">Número da PT: <h11>*</h11></label>
+                <div class="col-md-2">
+                    <input id="cod" name="cod" placeholder="Apenas números" class="form-control input-md" required=""
+                        type="text" maxlength="11">
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="Emissor">Emitente: <h11>*</h11></label>
+                <div class="col-md-8">
+                    <input id="emitente" name="emitente" placeholder="" class="form-control input-md" required=""
+                        type="text">
+                </div>
+            </div>
+             <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="requsitante">Requisitante: <h11>*</h11></label>
+                <div class="col-md-8">
+                    <input id="requisitante" name="requisitante" placeholder="" class="form-control input-md" required=""
+                        type="text">
+                </div>
+            </div>
+
+
+
+            <!-- Prepended text-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="Participantes">Participantes<h11>*</h11></label>
+                <div class="col-md-8">
+                    <input id="participantes" name="participantes" placeholder="" class="form-control input-md"
+                        required="" type="text">
+                </div>
+            </div>
+            <!-- Prepended checkbox -->
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="selectbasic">Localização<h11>*</h11></label>
+                <div class="col-md-3">
+                    <select required id="localizacao" name="localizacao" class="form-control">
+                        <option value=""></option>
+                        <option value="Patio Externo">Patio Externo</option>
+                        <option value="Patio Interno">Patio Interno</option>
+                        <option value="Plataforma">Plataforma</option>
+                        <option value="Patio de Bombas">Patio de bombas</option>
+                        <option value="Obra">Obra</option>
+                        <option value="Portaria">Portaria</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <!-- <div class="form-group">
+        <label class="col-md-2 control-label" for="encaminhamento">Encaminhamento <h11>*</h11></label>
+        <div class="col-md-4">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <label class="radio-inline" for="radios-0">
+                        <input type="radio" name="enc" id="enc" value="Nao" onclick="desabilita('enc_instituicao')"
+                            required>
+                        Não
+                    </label>
+                    <label class="radio-inline" for="radios-1">
+                        <input type="radio" name="enc" id="enc" value="sim" onclick="habilita('enc_instituicao')">
+                        Sim
+                    </label>
+                </span>
+                <input id="enc_instituicao" name="enc" class="form-control" type="text" placeholder="Instituição">
+            </div>
+        </div>
+    </div> -->>
+            <!-- Multiple Radios (inline) -->
+            <!--
+        <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
+    <div class="col-md-4">
+        <label required="" class="radio-inline" for="radios-0">
+            <input name="sexo" id="sexo" value="feminino" type="radio" required>
+            Feminino
+        </label>
+        <label class="radio-inline" for="radios-1">
+            <input name="sexo" id="sexo" value="masculino" type="radio">
+            Masculino
+        </label>
+    </div>        -->
+
+
+            <!-- Text input-->
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="Emissor">Descrição do Serviço: <h11>*</h11></label>
+                <div class="col-md-8">
+                    <input id="descricao" name="descricao" placeholder="Descricao da atividade"
+                        class="form-control input-md" required="" type="box">
+
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <br>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="Cadastrar"></label>
+                <div class="col-md-8">
+                    <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+                    <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+                </div>
+            </div>
+
+        </div>
+</div>
+
+</form>
+</div>
